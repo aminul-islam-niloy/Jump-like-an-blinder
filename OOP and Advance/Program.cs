@@ -2,11 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace OOP_and_Advance
 {
+
+        //extra class out of main class
     class Car
     {
         public string model;
@@ -15,7 +18,7 @@ namespace OOP_and_Advance
 
         public void  display_print()
         {
-            Console.WriteLine(model + "  is an awesome " + properties +  " with " + age + " Years "); ;
+           // Console.WriteLine(model + "  is an awesome " + properties +  " with " + age + " Years "); ;
         }
 
         public Car(string model, int age, string properties)
@@ -32,13 +35,52 @@ namespace OOP_and_Advance
 
         {
 
+            //Polymorphism and inheritance 
+
+            var cardam = new List<Cardam>
+            {
+            new Audi(234,"blue","A9"),
+            new Bmw(100,"white","22354")
+            
+
+            };
+
+            foreach(var Cardam in cardam)
+            {
+                Cardam.repair();
+                Cardam.Print_detals();
+            }
+
+
+            // get and set
+
+            Get_set get_Set = new Get_set();
+            get_Set.Debit(20000);
+
+            //get_Set.income += 10000;
+           
+           // Console.WriteLine(get_Set.income);
+            Console.ReadKey();
+
+
+
+            // time and date
+
+            Gatter_and_Settter get_time= new Gatter_and_Settter();
+
+            get_time.Date_time();
+
+
+            // OOP section
+
            Car vehi = new Car("Honda", 5, " Car");
             vehi.display_print();
 
-            Car pet = new Car("PomPom", 30, "Big");
+            Car pet = new Car("Poli", 30, "Big");
             pet.display_print();
 
-            string[] cars = { "AUdi", "BMW", "Tesla", "Honda" };
+            string[] cars = { "AUdI", "BMW", "Tesla", "Honda" };
+           
             // cars[2] = "Swopnil";
             // Console.WriteLine(cars[2]);
 
@@ -47,6 +89,9 @@ namespace OOP_and_Advance
 
 
 
+
+
+            // number and string section 
 
             string res= string.Concat(n1, n2);
 
@@ -63,10 +108,10 @@ namespace OOP_and_Advance
                // Console.WriteLine(list[i]);
             }
 
-            //var result = math.add(10, 13);
+          //  var result = math.add(10, 13);
             //Console.WriteLine(result);
 
-            // var season = Season.winter;
+             //var season = Season.winter;
 
 
             //  switch (season)
@@ -103,6 +148,8 @@ namespace OOP_and_Advance
 
         }
 
+
+        // method
         public static void age(int current, int year)
 
         {

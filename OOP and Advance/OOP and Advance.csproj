@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extra_location\Audi.cs" />
+    <Compile Include="Extra_location\Bmw.cs" />
+    <Compile Include="Extra_location\Car.cs" />
+    <Compile Include="Extra_location\Gatter_and_Settter.cs" />
     <Compile Include="Extra_location\math.cs" />
     <Compile Include="math.cs" />
     <Compile Include="Program.cs" />
